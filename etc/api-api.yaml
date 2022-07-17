@@ -1,0 +1,12 @@
+Name: api-api
+Host: 0.0.0.0
+Port: 8888
+TestRpc:
+  Etcd:
+    Hosts:
+      #- etcd-svc.kube-system.svc.cluster.local:2379
+      - 127.0.0.1:32012
+    Key: demo.rpc
+    CertFile: etc/cert/server.crt
+    CertKeyFile: etc/cert/server.key
+    CACertFile: etc/cert/ca.crt
